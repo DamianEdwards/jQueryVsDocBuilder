@@ -1,0 +1,68 @@
+﻿@model VsDocBuilder.Models.BuildModel
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery vsdoc File Generator</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" />
+</head>
+<body>
+    <div id="pageContainer">
+        <h1>jQuery vsdoc File Generator <span>for Visual Studio</span></h1>
+        <div id="chooseVersion">
+            @using (Html.BeginForm("Index", "Build", FormMethod.Get)) {
+                <label for="version">Choose a jQuery version:</label>
+                @Html.DropDownList("ver", Model.Versions, new { id = "version" })
+                <label for="newLineMethod">Choose method for new line generation:</label>
+                @Html.DropDownList("newLineMethod", Model.NewLineMethods, new { id = "newLineMethod" })
+                @*<span class="checkbox" id="useParaCheckbox">@Html.CheckBox("para", Model.GenerateParaTags, new { id = "usePara" })<label for="usePara">Generate &lt;para&gt;</label></span>*@
+                <input type="submit" value="Go!" />
+            }
+            <p id="status"></p>
+        </div>
+        <div id="memberPane">
+            <div id="memberList">
+                <select id="members" multiple="multiple" size="22">
+                    <option>loading...</option>
+                </select>
+            </div>
+            <div id="memberDetails">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input id="name" type="text" readonly="readonly" size="50" />
+                    </li>
+                    <li>
+                        <label for="aliases">Aliases:</label>
+                        <input id="aliases" type="text" size="50" />
+                    </li>
+                    <li>
+                        <label for="type">Type:</label>
+                        <input id="type" type="text" readonly="readonly" size="50" />
+                    </li>
+                    <li>
+                        <label>Body:</label>
+                        <code id="value"></code>
+                    </li>
+                    <li>
+                        <label>Doc Comment:</label>
+                        <code id="docComment"></code>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="buildDocPane" class="wide">
+            <input type="button" id="buildDoc" value="Build Doc File" />
+            <label for="docFile">Doc File:</label>
+            <textarea id="docFile" rows="20" cols="120" readonly="readonly" wrap="soft"></textarea>
+        </div>
+        <div id="outputPane" class="wide">
+            <label for="output">Log:</label>
+            <textarea id="output" rows="6" cols="120" readonly="readonly" wrap="soft"></textarea>
+        </div>
+    </div>
+    <script src="@Url.Content("~/Scripts/jquery-" + Model.Version + ".js")"></script>
+    <script src="@Url.Content("~/Scripts/underscore.js")"></script>
+    <script src="@Url.Content("~/Scripts/build.js")"></script>
+</body>
+</html>
