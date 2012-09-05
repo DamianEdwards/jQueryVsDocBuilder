@@ -98,6 +98,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\build.js" />
+    <None Include="Scripts\jquery-1.8.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.3-vsdoc.js" />
@@ -137,6 +138,8 @@
     <Content Include="Scripts\jquery-1.8.0.min.js">
       <DependentUpon>jquery-1.8.0.js</DependentUpon>
     </Content>
+    <Content Include="Scripts\jquery-1.8.1.js" />
+    <Content Include="Scripts\jquery-1.8.1.min.js" />
     <Content Include="Scripts\jquery-test-vsdoc.js" />
     <Content Include="Scripts\jquery-test.js" />
     <Content Include="Scripts\jquery-1.4.2.js" />
