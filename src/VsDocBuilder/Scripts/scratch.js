@@ -1,4 +1,4 @@
-﻿/// <reference path="jquery-1.8.1.js" />
+﻿/// <reference path="jquery-1.8.2.js" />
 
 var el = $("el").animate();
 var test = el.css("b", "test");
@@ -16,6 +16,8 @@ $("div").click(function (e) {
 });
 
 var i = el.height(100).width(100);
+
+
 
 // Problem with declared return type not being carried across assignments
 function A() {
@@ -58,4 +60,6 @@ A.prototype.z = function () {
 
 A.prototype.init.prototype = A.prototype;
 
-var a = A().e();
+var a = A().e("");
+
+
