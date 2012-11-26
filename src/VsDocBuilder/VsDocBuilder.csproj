@@ -99,6 +99,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\build.js" />
     <None Include="Scripts\jquery-1.8.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.8.3-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.4-vsdoc.js" />
     <Content Include="Scripts\jquery-1.6.3-vsdoc.js" />
@@ -143,6 +144,8 @@
     <None Include="Scripts\jquery-1.8.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <Content Include="Scripts\jquery-1.8.3.js" />
+    <Content Include="Scripts\jquery-1.8.3.min.js" />
     <Content Include="Scripts\jquery-test-vsdoc.js" />
     <Content Include="Scripts\jquery-test.js" />
     <Content Include="Scripts\jquery-1.4.2.js" />

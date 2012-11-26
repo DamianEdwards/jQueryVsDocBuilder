@@ -352,7 +352,7 @@ $(function () {
                 "* This file has been generated to support Visual Studio IntelliSense.\r\n" +
                 "* You should not use this file at runtime inside the browser--it is only\r\n" +
                 "* intended to be used only for design-time IntelliSense.  Please use the\r\n" +
-                "* standard jQuery library for all production use.\r\n" +
+                "* standard jQuery library for all runtime use.\r\n" +
                 "*\r\n" +
                 "* Comment version: {version}\r\n" +
                 "*/\r\n\r\n";

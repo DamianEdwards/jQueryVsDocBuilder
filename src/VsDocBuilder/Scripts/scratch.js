@@ -1,4 +1,4 @@
-﻿/// <reference path="jquery-1.8.2.js" />
+﻿/// <reference path="jquery-1.8.3.js" />
 
 var el = $("el").animate();
 var test = el.css("b", "test");
