@@ -1,4 +1,4 @@
-﻿/// <reference path="jquery-1.8.3.js" />
+﻿/// <reference path="jquery-1.9.0.js" />
 
 var el = $("el").animate();
 var test = el.css("b", "test");
@@ -7,7 +7,7 @@ test = el.animate({});
 
 $("").click(function (e) {
     /// <param name="e" type="jQuery.Event">Description</param>
-    
+        
     
 });
 

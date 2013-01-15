@@ -13,8 +13,13 @@ namespace VsDocBuilder.Controllers
 {
     public class BuildController : Controller
     {
-        readonly static string _defaultVersion = "1.8.3";
-        readonly static string[] _versions = new[] { "1.4.2", "1.4.3", "1.4.4", "1.5", "1.5.1", "1.5.2", "1.6", "1.6.1", "1.6.2", "1.6.3", "1.6.4", "1.7", "1.7.1", "1.8.0", "1.8.1", "1.8.2", "1.8.3" };
+        private readonly static string[] _versions = new[] { "1.4.2", "1.4.3", "1.4.4", "1.5", "1.5.1", "1.5.2", "1.6", "1.6.1", "1.6.2", "1.6.3", "1.6.4", "1.7", "1.7.1", "1.8.0", "1.8.1", "1.8.2", "1.8.3", "1.9.0" };
+        private readonly static string _defaultVersion;
+
+        static BuildController()
+        {
+            _defaultVersion = _versions.Last();
+        }
 
         public ActionResult Index(string ver, string newLineMethod = "xml")
         {
@@ -89,7 +94,7 @@ namespace VsDocBuilder.Controllers
                     // Download from api.jquery.com and save
                     using (var wc = new WebClient())
                     {
-                        wc.DownloadFile("http://api.jquery.com/api", apiFilePath);
+                        wc.DownloadFile("http://api.jquery.com/resources/api.xml", apiFilePath);
                     }
                 }
                 using (var fileStream = new FileStream(apiFilePath, FileMode.Open))
