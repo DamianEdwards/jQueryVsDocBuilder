@@ -1,4 +1,4 @@
-﻿/// <reference path="jquery-1.9.0.js" />
+﻿/// <reference path="jquery-1.9.1.js" />
 
 var el = $("el").animate();
 var test = el.css("b", "test");
@@ -7,7 +7,7 @@ test = el.animate({});
 
 $("").click(function (e) {
     /// <param name="e" type="jQuery.Event">Description</param>
-        
+    
     
 });
 
@@ -16,7 +16,6 @@ $("div").click(function (e) {
 });
 
 var i = el.height(100).width(100);
-
 
 
 // Problem with declared return type not being carried across assignments
