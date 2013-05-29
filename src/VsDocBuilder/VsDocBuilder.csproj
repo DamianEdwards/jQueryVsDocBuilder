@@ -154,6 +154,8 @@
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <None Include="Scripts\jquery-2.0.0-vsdoc.js" />
     <Content Include="Scripts\jquery-2.0.0.js" />
+    <None Include="Scripts\jquery-2.0.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-2.0.1.js" />
     <Content Include="Scripts\jquery-test-vsdoc.js" />
     <Content Include="Scripts\jquery-test.js" />
     <Content Include="Scripts\jquery-1.4.2.js" />

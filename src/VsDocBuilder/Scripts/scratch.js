@@ -1,4 +1,4 @@
-﻿/// <reference path="jquery-2.0.0.js" />
+﻿/// <reference path="jquery-2.0.1.js" />
 
 var el = $("el").animate();
 var test = el.css("b", "test");
@@ -15,7 +15,6 @@ $("div").click(function (e) {
 });
 
 var i = el.height(100).width(100);
-
 
 // Problem with declared return type not being carried across assignments
 function A() {
