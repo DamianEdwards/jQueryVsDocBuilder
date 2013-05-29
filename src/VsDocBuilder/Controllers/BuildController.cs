@@ -13,7 +13,7 @@ namespace VsDocBuilder.Controllers
 {
     public class BuildController : Controller
     {
-        private readonly static string[] _versions = new[] { "1.4.2", "1.4.3", "1.4.4", "1.5", "1.5.1", "1.5.2", "1.6", "1.6.1", "1.6.2", "1.6.3", "1.6.4", "1.7", "1.7.1", "1.8.0", "1.8.1", "1.8.2", "1.8.3", "1.9.0", "1.9.1", "2.0.0", "2.0.1" };
+        private readonly static string[] _versions = new[] { "1.4.2", "1.4.3", "1.4.4", "1.5", "1.5.1", "1.5.2", "1.6", "1.6.1", "1.6.2", "1.6.3", "1.6.4", "1.7", "1.7.1", "1.8.0", "1.8.1", "1.8.2", "1.8.3", "1.9.0", "1.9.1", "1.10.0", "2.0.0", "2.0.1" };
         private readonly static string _defaultVersion;
 
         static BuildController()
